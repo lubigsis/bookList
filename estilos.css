@@ -11,23 +11,126 @@ body{
     font-family: monospace;
 }
 
-form{
+/*---------------------------------Header-------------------------------*/
+
+header{
+    padding: 20px 30px;
+}
+
+header .contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-header .logo{
+    color: #ff0000;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+/*--------------------------------Main: formulario Registrate---------------------------*/
+
+.Formulario-registro-user{
+    width: 450px;
+    height: 370px;
+    margin-left: 70px;
+    margin-top: 50px;
+    border: 1px solid red;
+    background: #fff;
+}
+
+.cont-inputs-form-registro{
+    width: 100%;  
+    padding: 7px;
+}
+
+.Formulario-registro-user h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 37px;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.input-contenedor .icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 13px;
+}
+
+.button:hover{
+    background: rgb(91, 158, 160);
+}
+
+.cont-inputs-form-registro p{
+    text-align: center;
+}
+
+.cont-inputs-form-registro .link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: bolder;
+}
+
+.cont-inputs-form-registro .link:hover{
+    color: rgb(91, 158, 160);
+}
+
+
+
+
+/*----------------------Otro HTML: sitio que se abre al iniciar sesión-----------*/
+
+
+.formulario-registroLibros{
     width: 450px;
     margin-left: 70px;
-    margin-top: 70px;
+    margin-top: 20px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 6px;
 }
 
-h2{
+.formulario-registroLibros h2{
     color: #fff;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-input, textarea{
+.formulario-registroLibros input, textarea{
     width: 100%;
     margin-bottom: 20px;
     padding: 7px;
@@ -36,7 +139,7 @@ input, textarea{
     border-radius: 3px;
 }
 
-textarea{
+.formulario-registroLibros textarea{
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
@@ -54,6 +157,14 @@ textarea{
     border: 2px solid #fff;
 }
 
+/*-------------------------------------------------Footer*/
+
+/*.footer{
+    background: #f2f2f2;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 50px;
+}*/
 
 /*********************************************Revisas Responsive******************/
 @media (max-width:480px){
