@@ -23,36 +23,36 @@
     </header>
 
     <main>
-        <form class="Formulario-registro-user">
+        <form class="Formulario-registro-user" id="formulario" onsubmit="return validar();">
             <h1>Registrate</h1>
                 <div class="cont-inputs-form-registro">
 
                     <div class="input-contenedor">
                         <i class="fas fa-user icon"></i>
-                        <input type="text" placeholder="Nombre Completo">
+                        <input type="text" placeholder="Nombre Completo" id="nombreJS">
                     </div>
                     <div class="input-contenedor">
                         <i class="fas fa-envelope icon"></i>
-                        <input type="text" placeholder="Correo Electrónico">
+                        <input type="text" placeholder="Correo Electrónico" id="correoJS">
                     </div>
                     <div class="input-contenedor">
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Contraseña" id="contraseñaJS">
                     </div>
 
                         
                      <input type="submit" value="Registrate" class="button">
                     <p>¿Ya tienes cuenta? <a class="link" href="login.html">Iniciar Sesión</a></p>
+                    <p class="alerta" id="warnings"></p>
                 </div>
         </form>
     </main>
 
 
 
-    <footer class="footer">
-        <div class="contenedor-footer">
-            <p>Sitio web diseñado por</p>
-
+    <footer>
+        <div class="social">
+            <p>Redes Sociales</p>
         </div>
 
     </footer>
